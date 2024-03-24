@@ -1,10 +1,9 @@
 .sideBar{
-    flex: 2;
+    /* flex: 2; */
     height: calc(100vh - 50px);
     overflow-y: scroll;
-    position: fixed;
-    
-   
+    /* position: fixed; */
+    width: 200px;
 }
 
 ::-webkit-scrollbar{
@@ -68,3 +67,9 @@
     object-fit: cover;
     margin-right: 10px;
 }
+
+@media screen and (max-width: 400px) {
+    .sidebar {
+      display: none;
+    }
+  }
