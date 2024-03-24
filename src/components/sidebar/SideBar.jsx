@@ -4,6 +4,8 @@ import { BsChatSquareDotsFill } from "react-icons/bs";
 import { FaVideo, FaRegQuestionCircle, FaUserGraduate } from "react-icons/fa";
 import { IoBookmark } from "react-icons/io5";
 import { TfiBag } from "react-icons/tfi";
+import {Users} from "../../dummyData"
+import Friends from "../friends/Friends";
 function SideBar() {
   return (
     <div className="sideBar">
@@ -56,97 +58,14 @@ function SideBar() {
         </ul>
         <button className="sideBarBtn">Show More</button>
         <hr className="sideBarhr"/>
-
         <ul className="sideBarFriendList">
-            <li className="sideBarFriend">
-                <img src="/assets/person/2.jpeg" className="sideBarFriendImg" alt="" />
-                <span className="sideBarFriendName">Joseph Odongo</span>
-            </li>
+            {Users.map(u=>(
+                <Friends key={u.id} user={u}/>
+            ))}
         </ul>
 
-        <ul className="sideBarFriendList">
-            <li className="sideBarFriend">
-                <img src="/assets/person/2.jpeg" className="sideBarFriendImg" alt="" />
-                <span className="sideBarFriendName">Joseph Odongo</span>
-            </li>
-        </ul>
+      
 
-        <ul className="sideBarFriendList">
-            <li className="sideBarFriend">
-                <img src="/assets/person/2.jpeg" className="sideBarFriendImg" alt="" />
-                <span className="sideBarFriendName">Joseph Odongo</span>
-            </li>
-        </ul>
-
-        <ul className="sideBarFriendList">
-            <li className="sideBarFriend">
-                <img src="/assets/person/2.jpeg" className="sideBarFriendImg" alt="" />
-                <span className="sideBarFriendName">Joseph Odongo</span>
-            </li>
-        </ul>
-
-        <ul className="sideBarFriendList">
-            <li className="sideBarFriend">
-                <img src="/assets/person/2.jpeg" className="sideBarFriendImg" alt="" />
-                <span className="sideBarFriendName">Joseph Odongo</span>
-            </li>
-        </ul>
-
-        <ul className="sideBarFriendList">
-            <li className="sideBarFriend">
-                <img src="/assets/person/2.jpeg" className="sideBarFriendImg" alt="" />
-                <span className="sideBarFriendName">Joseph Odongo</span>
-            </li>
-        </ul>
-
-        <ul className="sideBarFriendList">
-            <li className="sideBarFriend">
-                <img src="/assets/person/2.jpeg" className="sideBarFriendImg" alt="" />
-                <span className="sideBarFriendName">Joseph Odongo</span>
-            </li>
-        </ul>
-
-        <ul className="sideBarFriendList">
-            <li className="sideBarFriend">
-                <img src="/assets/person/2.jpeg" className="sideBarFriendImg" alt="" />
-                <span className="sideBarFriendName">Joseph Odongo</span>
-            </li>
-        </ul>
-
-        <ul className="sideBarFriendList">
-            <li className="sideBarFriend">
-                <img src="/assets/person/2.jpeg" className="sideBarFriendImg" alt="" />
-                <span className="sideBarFriendName">Joseph Odongo</span>
-            </li>
-        </ul>
-
-        <ul className="sideBarFriendList">
-            <li className="sideBarFriend">
-                <img src="/assets/person/2.jpeg" className="sideBarFriendImg" alt="" />
-                <span className="sideBarFriendName">Joseph Odongo</span>
-            </li>
-        </ul>
-
-        <ul className="sideBarFriendList">
-            <li className="sideBarFriend">
-                <img src="/assets/person/2.jpeg" className="sideBarFriendImg" alt="" />
-                <span className="sideBarFriendName">Joseph Odongo</span>
-            </li>
-        </ul>
-
-        <ul className="sideBarFriendList">
-            <li className="sideBarFriend">
-                <img src="/assets/person/2.jpeg" className="sideBarFriendImg" alt="" />
-                <span className="sideBarFriendName">Joseph Odongo</span>
-            </li>
-        </ul>
-
-        <ul className="sideBarFriendList">
-            <li className="sideBarFriend">
-                <img src="/assets/person/2.jpeg" className="sideBarFriendImg" alt="" />
-                <span className="sideBarFriendName">Joseph Odongo</span>
-            </li>
-        </ul>
      </div>
     </div>
   )

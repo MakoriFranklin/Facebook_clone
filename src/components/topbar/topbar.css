@@ -6,6 +6,7 @@
     align-items: center;
     position: sticky;
     top: 0;
+    z-index: 999;
 }
 
 .topBarLeft{
@@ -80,4 +81,11 @@
     border-radius: 50px;
     cursor: pointer;
     object-fit: cover;
+}
+
+@media screen and (max-width:540px) {
+    .topBarLogo{
+        font-size: 10px;
+        display: flex;
+    }
 }

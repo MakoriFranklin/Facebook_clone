@@ -2,7 +2,8 @@
     flex: 2;
     height: calc(100vh - 50px);
     overflow-y: scroll;
-    position: fixed;
+    position: sticky;
+    top: 50px;
     
    
 }
@@ -67,4 +68,15 @@
     border-radius: 100%;
     object-fit: cover;
     margin-right: 10px;
+}
+
+@media screen and (max-width:540px) {
+    .sideBar{
+        flex: 2;
+        height: calc(100vh - 50px);
+        overflow-y: scroll;
+          
+        
+       
+    }
 }
